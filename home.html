@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo1.png">
+    <title>Document</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+        body{
+          height: 100vh;
+          background-image: url("pant.jpg");
+          background-position: center;
+          background-size: 100%;
+          background-attachment: fixed;
+
+            cursor: none;
+        }
+        
+        .logo img{
+            width: 150px;
+        }
+        .logo{
+            text-align: center;
+            margin-bottom: -80px;
+        }
+        .container{
+            margin-top: -20px;
+        }
+        .back-video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+       }
+       @media (min-aspect-ratio: 16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
+       }
+       @media (max-aspect-ratio: 16/9){
+        .back-video{
+            width: auto;
+            height: 100%;
+        }
+       }
+       .content{
+        text-align: center;
+         color: #fff;
+         font-family: Anthony;
+         font-size: 35px;
+         letter-spacing: 0.3em;
+         
+       }
+       .btn{
+        text-align: center;
+        padding-top: 100px;
+       }
+       .gtn{
+        border-radius: 30px;
+        padding: 13px 60px;
+        letter-spacing: 0.2em;
+        border: none;
+        cursor: none;
+       }
+        .a{
+            padding-top: 320px;
+            text-align: center;
+            font-family: Didot sans-serif;
+         font-size: 25px;
+         letter-spacing: 0.1em;
+        }
+        .slide-img img{
+            width: 24%;
+            
+        }
+        .vid{
+            height: 640px;
+            width: 50%;
+        }
+        .a{
+            padding-top: 1;
+        }
+        nav{
+            background-color: none;
+            box-sizing: 0;
+        
+        
+
+    }
+    nav ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    nav li{
+        height: 50px;
+        font-size: 23px;
+
+    }
+    nav a{
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    nav a:hover{
+    color: white;
+    }
+    nav li:first-child{
+        margin-right: auto;
+    }
+    .sidebar{
+        margin-top: -5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 500px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    }
+    .sidebar li{
+        width: 100%;
+
+    }
+    .sidebar a{
+       width: 100%;
+    }
+  
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  gap: 10px;
+}
+.cursor{
+            position: fixed;
+          width: 20px;
+          height: 20px;
+          border: 2px solid #DCDCDC;
+          border-radius: 50%;
+          left: 0;
+          top: 0;
+          pointer-events: none;
+          transform: translate(-50%, -50%);
+          transition: .01s;
+        }
+        
+        
+        .content:hover ~ .cursor{
+            transform: translate(-50%, -50%) scale(1.5);
+            border: 2px sold #fff;
+            opacity: 1;
+        }
+        .text{
+            letter-spacing: 0.2em;
+        }
+        .line{
+            letter-spacing: 0.2em;
+        }
+        .t img{
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            margin-top: 50px;             
+        }
+       .tp button {
+            
+ border: none;
+ position: relative;
+ width: 200px;
+ height: 73px;
+ padding: 0;
+ z-index: 2;
+ -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+ -webkit-mask-size: 100%;
+ cursor: pointer;
+ background-color: transparent;
+ transform: translateY(8px)
+ 
+}
+
+.tp button:after {
+ content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ box-shadow: 0px 0 0 0 white;
+ transition: all 2s ease;
+}
+
+.tp button:hover:after {
+ box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.tp button span {
+ position: absolute;
+ width: 100%;
+ font-size: 15px;
+ font-weight: 100;
+ left: 50%;
+ top: 39%;
+ letter-spacing: 3px;
+ text-align: center;
+ transform: translate(-50%,-50%);
+ color: black;
+ transition: all 2s ease;
+}
+
+.tp button:hover span {
+ color: white;
+}
+
+.tp button:before {
+ content: '';
+ position: absolute;
+ width: 0;
+ height: 100%;
+ background-color: black;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ transition: all 1s ease;
+}
+
+.tp button:hover:before {
+ width: 100%;
+}
+.tp{
+    text-align: center;
+ margin-top: -547px;
+ margin-bottom: 500px;
+cursor: none;
+ padding-right: 4%;
+}
+.anm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 80px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: none;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: none;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anm svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anm .arr-1 {
+  right: 16px;
+}
+
+.anm .arr-2 {
+  left: -25%;
+}
+
+.anm .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anm .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.anm:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.anm:hover .arr-1 {
+  right: -25%;
+}
+
+.anm:hover .arr-2 {
+  left: 16px;
+}
+
+.anm:hover .text {
+  transform: translateX(12px);
+}
+
+.anm:hover svg {
+  fill: #1f387e;
+}
+
+.anm:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.anm:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.ph img{
+  width: 69.7%;
+  height: 96.5vh;
+  margin-top: 20px;
+}
+.vod{
+  height: 750px;
+  max-width: 30%;
+
+}
+.alig{
+margin-top: -90px;
+  margin-left: 80%;
+}
+.paid {
+  position: relative;
+  font-size: 35px;
+  font-weight: 150;
+  color: white;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  clip-path: polygon(0 0, 67% 0, 100% 100%, 33% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.3s 0.3s;
+}
+
+paid:hover {
+  text-shadow: 1px 1px 20px #e0aaff, 1px 1px 60px red;
+}
+
+button:active {
+  transform: scale(0.89);
+}
+
+.paid::before,
+.paid::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: width 0.3s 0.6s;
+}
+
+.paid::before {
+  top: 0;
+  left: 0;
+  transform-origin: top;
+}
+
+.paid::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom;
+}
+
+.paid:hover::before,
+.button:hover::after {
+  width: 65%;
+}
+
+.paid span {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: red;
+  transition: width 0.3s, transform 0.3s 0.3s;
+  transform: rotate(22.3deg);
+}
+
+.paid span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.paid span:nth-child(2) {
+  bottom: 0;
+  right: 0;
+  transform-origin: right;
+}
+
+.paid:hover span {
+  width: 55%;
+  transform: rotate(50deg);
+}
+.paid{
+  margin-top: -113px;
+  margin-left: 55.2%;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 40px 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+  
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), transparent);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), transparent);
+  
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+  
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 150px;
+  margin: 0 40px;
+}
+
+
+
+
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.footer{
+  margin-top: 46px;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.counter-up{
+  min-height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding:  1px 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -90px;
+  margin-bottom: -90px;
+}
+.counter-up::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+.counter-up .content{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box{
+  width: calc(25% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 30px;
+}
+.content .box .icon{
+  font-size: 48px;
+  color: rgb(24, 24, 132);
+  transition: all .2s ease;
+}
+
+.content .box .icon:hover{
+  transform: scale(1.4);
+}
+
+
+.content .box .counter{
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  font-family: sans-serif;
+  transition: all .2s ease;
+
+}
+.content .box .counter:hover{
+  transform: scale(1.4);
+}
+
+.content .box .text{
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+  transition: all .2s ease;
+}
+.content .box .text:hover{
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1036px) {
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box{
+    width: calc(50% - 30px);
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .counter-up .content .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper{
+    padding: 5px;
+  }
+  .counter-up{
+    padding: 10px 10px 0 10px;
+  }
+}
+
+
+
+
+.cl1{
+  transition: all .2s ease;
+  
+
+}
+.cl1:hover{
+  transform: scale(1.2);
+}
+
+.cl1:hover .cl1-slide {
+  animation-play-state: paused;
+}
+
+
+
+.cl2{
+  transition: all .2s ease;
+
+}
+.cl2:hover{
+  transform: scale(1.2);
+}
+.cl2:hover .cl2-slide {
+  animation-play-state: paused;
+}
+
+
+.cl3{
+  transition: all .2s ease;
+
+}
+.cl3:hover{
+  transform: scale(1.2);
+}
+.cl3:hover .cl3-slide {
+  animation-play-state: paused;
+}
+
+
+.cl4{
+  transition: all .2s ease;
+
+}
+.cl4:hover{
+  transform: scale(1.2);
+}
+.cl4:hover .cl4-slide {
+  animation-play-state: paused;
+}
+
+
+.cl5{
+  transition: all .2s ease;
+
+}
+.cl5:hover{
+  transform: scale(1.2);
+}
+.cl5:hover .cl5-slide {
+  animation-play-state: paused;
+}
+
+
+.cl6{
+  transition: all .2s ease;
+
+}
+.cl6:hover{
+  transform: scale(1.2);
+}
+.cl6:hover .cl6-slide {
+  animation-play-state: paused;
+}
+
+
+.cl7{
+  transition: all .2s ease;
+
+}
+.cl7:hover{
+  transform: scale(1.2);
+}
+.cl7:hover .cl7-slide {
+  animation-play-state: paused;
+}
+
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="container"><div class="logo">
+        <video class="back-video" autoplay muted loop play-inline>
+            <source src="img/bmw.mp4">
+        </video>
+
+        
+        
+
+        <img src="img/img.png" >
+    </div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><img src="img1/close.svg" alt=""></a></li>
+            <li><a href="drive.html">HOME</a></li>
+            <li><a href="dv.html">Models</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT</a></li>
+            <li><a href="#">SERVICE</a></li>
+
+        </ul>
+        <ul>
+            
+             <li onclick=showslidebar()><a href="#"><div style="margin-top: -45px;"><img style="width: 26px; height: 26px; color: black;" src="img1/menu.svg" alt=""></div></a></li>
+        </ul>
+    </nav>
+    <hr style="margin-top: 25px;">
+   <div class="content"><h1 style="padding-top: 110px;">SPECTRE</h1>
+    <p style="margin-top: -20spx;">IN  STYLE</p></div>
+    <div class="btn"><a href="dv.html"><button  class="gtn">DISCOVER NOW</button></a></div>
+    </div>
+    
+
+    
+    <div class="a"><h2 style="padding-top: -70px;">EXPLORE FEATURE</h2>
+    <p style="margin-top: 18px; font-size: 23px;">WITH SPEED</p></div>
+     
+    <div class="logos">
+      <div class="logos-slide">
+        <img class="cl1" src="img1/BMW_Logo.png" />
+        <img class="cl2" src="img/Ferrari_Logo.png" />
+        <img class="cl3" src="img1/lambo.png" />
+        <img class="cl4" src="img/Land_Rover_Logo.png" />
+        <img class="cl5" src="img1/Ford_Mustang_Logo.png" />
+        <img class="cl6" src="img/Volvo_Logo.png" />
+        <img class="cl7" src="img/Maserati_Logo.png" />
+      </div>
+    </div>
+
+    <HR></HR>
+    <P style="font-size: 23px; margin-bottom: -301px; padding-top: 20px;">PORSCHE GT3</P>
+    <div class="slide-img">
+    <img src="img1/cat3.png" alt="">
+    <video style="padding-left: 20px;" autoplay muted loop play-inline class="vid">
+        <source src="img/pose.mp4">
+    </video>
+    <img class="a" src="img/cat10.png" alt=""> 
+
+    <a style="text-decoration: none;" href="dv.html"><button class="paid">
+      Button
+      <span></span>
+      <span></span>
+    </button>
+  </a>
+    
+      
+    <div class="t"><img src="img/play1.png" alt="">
+        <div class="tp"> <button>
+          <a href="dv.html"><span>PLAY NOW</span>
+          </button></a></div>
+    </div>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+ 
+  <div class="counter-up">
+    <div class="content">
+      <div class="box">
+        <div class="icon"><i class="fas fa-history"></i></div>
+        <div class="counter">24</div>
+        <div class="text">Working Hours</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-gift"></i></div>
+        <div class="counter">508</div>
+        <div class="text">Completed Projects</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="counter">436</div>
+        <div class="text">Happy Clients</div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div class="counter">120</div>
+        <div class="text">Awards Received</div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="text"><h2 style="font-size: 40px; text-align: center; letter-spacing: 0.2em; margin-top: 50px;"><span style="color: red;">C</span>ONT<span style="color: red;">IN</span>UE</h2></div>
+        <div class="line"><p style="margin-top: 10spx; font-size: 27px; text-align: center; letter-spacing: 0.1em; color: red;">YOUR JORNEY</p></div>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<div class="ph"><img src="img/pant.jpg" alt="">
+  <video style="padding-left: 20px;" autoplay muted loop play-inline class="vod">
+    <source src="img/far.mp4">
+</video>
+</div>
+
+<div class="alig"><button class="anm">
+  <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text">E N T R Y</span>
+  <span class="circle"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</anm>
+</div>
+
+
+
+
+
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="about.html">about us</a></li>
+  	 				<li><a href="dv.html">Models</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+             <li><a href="#">Blogs</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Types Of Cars</h4>
+  	 			<ul>
+  	 				<li><a href="dv.html">Luxury Cars</a></li>
+  	 				<li><a href="dv.html">Super Cars</a></li>
+  	 				<li><a href="dv.html">SUV</a></li>
+  	 				<li><a href="dv.html">sedan</a></li>
+             <li><a href="dv.html">Sport Cars</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/profile.php?id=61560468907805"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+
+  
+
+
+</body>
+</html>
+
+
+
+
+
+<script>
+    function showslidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hidesidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    var cursor = document.querySelector(".cursor");
+            var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX
+    + "px; top: " + e.clientY + "px;";
+         });
+
+         var copy = document.querySelector(".logos-slide").cloneNode(true);
+         document.querySelector(".logos").appendChild(copy);
+
+         $(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+        </script>
+   
+</body>
+</html>
